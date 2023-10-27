@@ -1,64 +1,82 @@
 import React from "react";
-import Tilt from "react-tilt";
+import profile from "../assets/profile.png";
 import { motion } from "framer-motion";
-
+import { Typewriter } from "react-simple-typewriter";
 import { styles } from "../styles";
-import { services } from "../constants";
+import { FaBeer, FaDownload } from 'react-icons/fa';
+import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaLocationArrow } from 'react-icons/fa';
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
-
-const ServiceCard = ({ index, title, icon }) => (
-  <Tilt className='xs:w-[250px] w-full'>
-    <motion.div
-      variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
-    >
-      <div
-        options={{
-          max: 45,
-          scale: 1,
-          speed: 450,
-        }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
-      >
-        <img
-          src={icon}
-          alt='web-development'
-          className='w-16 h-16 object-contain'
-        />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
-          {title}
-        </h3>
-      </div>
-    </motion.div>
-  </Tilt>
-);
+import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
-
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+      <motion.div
+        variants={textVariant()}
+        className="text-secondary text-[17px] leading-[30px] mx-auto"
+        id="about"
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
-      </motion.p>
-
-      <div className='mt-20 flex flex-wrap gap-10'>
-        {services.map((service, index) => (
-          <ServiceCard key={service.title} index={index} {...service} />
-        ))}
-      </div>
+        <h2
+          className={`uppercase font-semibold mb-8 text-center lg:text-left text-2xl lg:text-xl lg:-mb-20`}
+        >
+          About Me
+        </h2>
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-x-40">
+          <div>
+            <h1 className="text-2xl lg:text-3xl">
+              <span className="text-4xl">I'm </span>
+              <span className="text-3xl lg:text-5xl text-amber-300 font-semibold">
+                Mohammad Rafi
+              </span>
+            </h1>
+            <h3 className="text-3xl my-3">
+              A{" "}
+              <span className="text-[#925EFF] font-bold">
+                <Typewriter
+                  words={[
+                    "Front End Developer",
+                    "MERN Stack Developer",
+                    "Web Designer",
+                    "Web Developer",
+                  ]}
+                  loop={5}
+                  cursor
+                  cursorStyle="_"
+                  typeSpeed={70}
+                  deleteSpeed={50}
+                  delaySpeed={1000}
+                />
+              </span>
+            </h3>
+            <motion.p
+              variants={fadeIn("", "", 0.1, 1)}
+              className="text-justify p-2 text-lg rounded-lg"
+            >
+              Accepting the challenge of today's fastest developing industry by
+              utilizing all the knowledge, skill, and experience. I'm an expert
+              with{" "}
+              <span className="technology text-[#925EFF] font-semibold">
+                React Js, JavaScript, MongoDB, Node Js, Express JS, REST API,
+                HTML5, CSS, Tailwind CSS, Bootstrap, Git, Github, React
+                Bootstrap, React Query, npm, Firebase, Daisy UI, Stripe Payment
+                Integration
+              </span>
+              , and Headless UI to create various features for client websites.
+              Combine this with my ability to thrive in a collaborative
+              environment, and I think that makes me a perfect fit for Frontend
+              React Developer.
+            </motion.p>
+            <motion.div className="flex items-center gap-7 text-4xl mt-5">
+                  <Link to="https://www.linkedin.com/in/mohammad--rafi/" className="text-[#48a3ff]"><FaLinkedin></FaLinkedin></Link>
+                  <Link to="https://github.com/mrrafi5869" className="text-[#43BD55]"><FaGithub></FaGithub></Link>
+                  <Link to="https://www.instagram.com/mohammad_____rafi/" className="text-[#D61AA8]"><FaInstagram></FaInstagram></Link>
+                  <span className="flex items-center gap-2 text-lg border border-[#925EFF] px-3 py-2 rounded-full cursor-pointer text-white hover:bg-[#925eff] transition-all duration-200">Resume <FaDownload></FaDownload></span>
+            </motion.div>
+          </div>
+          <img src={profile} className="rounded-full" alt="" />
+        </div>
+      </motion.div>
     </>
   );
 };
