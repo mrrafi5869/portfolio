@@ -12,10 +12,8 @@ import { Link } from "react-router-dom";
 const ProjectCard = ({
   index,
   name,
-  desc,
   stack,
   technologies,
-  img,
   liveLink,
   clientLink,
   serverLink,
@@ -114,7 +112,8 @@ const ProjectCard = ({
               </span>
               <span class="relative invisible">live Site</span>
             </Link>
-            <Link
+            {
+              serverLink && <Link
               to={serverLink}
               class="relative inline-flex items-center justify-start py-2 pl-1 pr-8 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-7 hover:pr-2 bg-gray-50 group"
             >
@@ -155,6 +154,7 @@ const ProjectCard = ({
                 Server Site
               </span>
             </Link>
+            }
           </div>
         </div>
       </Tilt>

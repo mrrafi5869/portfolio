@@ -1,13 +1,22 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import contact from "./contact.json";
 import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import Lottie from "react-lottie";
 
 const Contact = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: contact,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -125,9 +134,9 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='xl:flex-1 xl:h-auto md:w-[250px] h-[250px]'
       >
-        <EarthCanvas />
+        <Lottie options={defaultOptions} style={{ width: '100%', height: "100%" }} />
       </motion.div>
     </div>
   );

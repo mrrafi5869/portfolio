@@ -2,14 +2,14 @@ import React from "react";
 import profile from "../assets/profile.png";
 import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
-import { styles } from "../styles";
-import { FaBeer, FaDownload } from 'react-icons/fa';
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaGithub, FaEnvelope, FaPhone, FaLocationArrow } from 'react-icons/fa';
+import { GrMail } from "react-icons/gr";
+import { FaInstagram, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 
 const About = () => {
+
   return (
     <>
       <motion.div
@@ -68,10 +68,38 @@ const About = () => {
               React Developer.
             </motion.p>
             <motion.div className="flex items-center gap-7 text-4xl mt-5">
-                  <Link to="https://www.linkedin.com/in/mohammad--rafi/" className="text-[#48a3ff]"><FaLinkedin></FaLinkedin></Link>
-                  <Link to="https://github.com/mrrafi5869" className="text-[#43BD55]"><FaGithub></FaGithub></Link>
-                  <Link to="https://www.instagram.com/mohammad_____rafi/" className="text-[#D61AA8]"><FaInstagram></FaInstagram></Link>
-                  <span className="flex items-center gap-2 text-lg border border-[#925EFF] px-3 py-2 rounded-full cursor-pointer text-white hover:bg-[#925eff] transition-all duration-200">Resume <FaDownload></FaDownload></span>
+              <Link
+                to="https://www.linkedin.com/in/mohammad--rafi/"
+                className="text-[#48a3ff]"
+              >
+                <FaLinkedin></FaLinkedin>
+              </Link>
+              <Link
+                to="https://github.com/mrrafi5869"
+                className="text-[#43BD55]"
+              >
+                <FaGithub></FaGithub>
+              </Link>
+              <Link
+                to="https://www.instagram.com/mohammad_____rafi/"
+                className="text-[#D61AA8]"
+              >
+                <FaInstagram></FaInstagram>
+              </Link>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&tf=1&to=mrrafi5869@gmail.com"
+                target="blank"
+                className="text-[#456AD1]"
+              >
+                <GrMail></GrMail>
+              </a>
+
+              <a href="Mohammad-Rafi_MERN-Stack Developer.pdf" download="Mohammad-Rafi_MERN-Stack Developer.pdf"
+                className="flex items-center gap-2 text-lg border border-[#925EFF] px-[10px] py-[6px] rounded-full cursor-pointer text-white hover:bg-[#925eff] transition-all duration-200"
+                
+              >
+                Resume <FaDownload></FaDownload>
+              </a>
             </motion.div>
           </div>
           <img src={profile} className="rounded-full" alt="" />
