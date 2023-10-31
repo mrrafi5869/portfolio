@@ -6,8 +6,11 @@ import {
   reactjs,
   meta,
   starbucks,
-  shopify,
+  shopify
 } from "../assets";
+import git from '../assets/tech/git.png'
+import javascript from '../assets/tech/javascript.png'
+import mongodb from '../assets/tech/mongodb.png'
 
 const services = [
   {
@@ -31,7 +34,7 @@ const services = [
 const experiences = [
   {
     title: "Website Building",
-    icon: starbucks,
+    icon: javascript,
     iconBg: "#383E56",
     points: [
       "Your webpage deserves to be dynamic, smooth, and user accessible. Let’s combine your ideas and my skills to create something new and make that happen. After all, the first look at your website should leave a lasting good impression.",
@@ -49,7 +52,7 @@ const experiences = [
   },
   {
     title: "Website Maintenance",
-    icon: shopify,
+    icon: git,
     iconBg: "#383E56",
     date: "Jan 2022 - Jan 2023",
     points: [
@@ -59,7 +62,7 @@ const experiences = [
   },
   {
     title: "Full stack Development",
-    icon: meta,
+    icon: mongodb,
     iconBg: "#E6DEDD",
     points: [
       "In the modern world of online services, a high functional web application is a must have for any business. Make your web applications stand out with quality back-end, front-end and full-stack development services.",
