@@ -5,6 +5,7 @@ import contact from "./contact.json";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import Lottie from "react-lottie";
 
 const Contact = () => {
   const defaultOptions = {
