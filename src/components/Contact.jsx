@@ -6,6 +6,7 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 import Lottie from "lottie-react";
+import useAOSInit from "../hooks/useAOSint";
 
 const Contact = () => {
   const formRef = useRef();
@@ -63,12 +64,16 @@ const Contact = () => {
         }
       );
   };
-
+  useAOSInit();
   return (
     <div
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
-      <motion.div
+      <div  data-aos="flip-left"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-black-100 p-8 rounded-2xl'
       >
@@ -121,14 +126,17 @@ const Contact = () => {
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </div>
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
+      <div data-aos="flip-right"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
         className='xl:flex-1 xl:h-auto md:w-[250px] h-[250px]'
       >
         <Lottie animationData={contact} loop={true} />
-      </motion.div>
+      </div>
     </div>
   );
 };

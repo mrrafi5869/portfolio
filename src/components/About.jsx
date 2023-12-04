@@ -7,23 +7,34 @@ import { FaInstagram, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
+import useAOSInit from "../hooks/useAOSint";
 
 const About = () => {
-
+  useAOSInit();
   return (
     <>
-      <motion.div
-        variants={textVariant()}
+      <div
         className="text-secondary text-[17px] leading-[30px] mx-auto"
         id="about"
       >
         <h2
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true"
           className={`uppercase font-semibold mb-8 text-center lg:text-left text-2xl lg:text-xl lg:-mb-20`}
         >
           About Me
         </h2>
         <div className="flex flex-col lg:flex-row items-center justify-between gap-x-40">
-          <div>
+          <div
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+          >
             <h1 className="text-2xl lg:text-3xl">
               <span className="text-4xl">I'm </span>
               <span className="text-3xl lg:text-5xl text-amber-300 font-semibold">
@@ -94,17 +105,27 @@ const About = () => {
                 <GrMail></GrMail>
               </a>
 
-              <a href="Mohammad-Rafi_MERN-Stack Developer.pdf" download="Mohammad-Rafi_MERN-Stack Developer.pdf"
+              <a
+                href="Mohammad-Rafi_MERN-Stack Developer.pdf"
+                download="Mohammad-Rafi_MERN-Stack Developer.pdf"
                 className="flex items-center gap-2 text-lg border border-[#925EFF] px-[10px] py-[6px] rounded-full cursor-pointer text-white hover:bg-[#925eff] transition-all duration-200"
-                
               >
                 Resume <FaDownload></FaDownload>
               </a>
             </motion.div>
           </div>
-          <img src={profile} className="rounded-full" alt="" />
+          <img
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true"
+            src={profile}
+            className="rounded-full"
+            alt=""
+          />
         </div>
-      </motion.div>
+      </div>
     </>
   );
 };

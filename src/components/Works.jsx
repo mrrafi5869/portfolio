@@ -19,7 +19,11 @@ const ProjectCard = ({
 }) => {
   useAOSInit();
   return (
-      <div data-aos="fade-up"
+      <div data-aos="fade-down"
+      data-aos-offset="200"
+      data-aos-duration="1000"
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
         className="bg-[#30285e] p-5 rounded-2xl w-[300px] md:w-[460px] mx-auto relative"
       >
         <div className="h-[550px] text-center">
@@ -158,13 +162,13 @@ const ProjectCard = ({
 const Works = () => {
   return (
     <>
-      <div data-aos="fade-up">
+      <div data-aos="fade-right">
         <p className={`${styles.sectionSubText}  text-center lg:text-left`}>My work</p>
         <h2 className={`${styles.sectionHeadText} text-center lg:text-left`}>Projects</h2>
       </div>
 
       <div className="w-full flex">
-        <div data-aos="fade-up"
+        <div data-aos="fade-right"
           className="mt-3 text-secondary text-[17px] lg:text-left text-justify max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through

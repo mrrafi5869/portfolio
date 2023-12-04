@@ -10,9 +10,10 @@ import "react-vertical-timeline-component/style.min.css";
 import { styles } from "../styles";
 import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
+import useAOSInit from "../hooks/useAOSint";
 
 const ExperienceCard = ({ experience }) => {
+  useAOSInit();
   return (
     <VerticalTimelineElement
       contentStyle={{
@@ -52,14 +53,18 @@ const ExperienceCard = ({ experience }) => {
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant()} className="text-center">
+      <div data-aos="fade-down"
+    data-aos-offset="200"
+    data-aos-duration="1000"
+    data-aos-easing="ease-in-out"
+    data-aos-mirror="true" className="text-center">
         <p className={`${styles.sectionSubText}`}>
           What I will do for you
         </p>
         <h2 className={`${styles.sectionHeadText}`}>
           My Services
         </h2>
-      </motion.div>
+      </div>
 
       <div className='mt-20 flex flex-col'>
         <VerticalTimeline>
