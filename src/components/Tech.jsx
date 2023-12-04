@@ -1,7 +1,7 @@
 import React from "react";
 import "./Tech.css";
 import { SectionWrapper } from "../hoc";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 import animationData from "./desktop.json";
 import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
@@ -91,7 +91,7 @@ const Tech = () => {
           </div>
         </div>
         <div style={{ width: '100%', maxWidth: '500px' }}>
-  <Lottie options={defaultOptions} style={{ width: '100%' }} />
+        <Lottie animationData={animationData} loop={true} />
 </div>
         <div>
           <p className="contact-head text-3xl text-center mt-5">Back End</p>

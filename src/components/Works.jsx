@@ -1,5 +1,4 @@
 import React from "react";
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 import "./Works.css";
 import { styles } from "../styles";
@@ -7,6 +6,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
+import useAOSInit from "../hooks/useAOSint";
 
 const ProjectCard = ({
   index,
@@ -17,14 +17,9 @@ const ProjectCard = ({
   clientLink,
   serverLink,
 }) => {
+  useAOSInit();
   return (
-    <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
-      <Tilt
-        options={{
-          max: 0,
-          scale: 1,
-          speed: 450,
-        }}
+      <div data-aos="fade-up"
         className="bg-[#30285e] p-5 rounded-2xl w-[300px] md:w-[460px] mx-auto relative"
       >
         <div className="h-[550px] text-center">
@@ -156,22 +151,20 @@ const ProjectCard = ({
             }
           </div>
         </div>
-      </Tilt>
-    </motion.div>
+      </div>
   );
 };
 
 const Works = () => {
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div data-aos="fade-up">
         <p className={`${styles.sectionSubText}  text-center lg:text-left`}>My work</p>
         <h2 className={`${styles.sectionHeadText} text-center lg:text-left`}>Projects</h2>
-      </motion.div>
+      </div>
 
       <div className="w-full flex">
-        <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+        <div data-aos="fade-up"
           className="mt-3 text-secondary text-[17px] lg:text-left text-justify max-w-3xl leading-[30px]"
         >
           Following projects showcases my skills and experience through
@@ -179,7 +172,7 @@ const Works = () => {
           links to code repositories and live demos in it. It reflects my
           ability to solve complex problems, work with different technologies,
           and manage projects effectively.
-        </motion.p>
+        </div>
       </div>
 
       <div className="mt-20 flex flex-wrap gap-7">

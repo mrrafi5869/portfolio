@@ -5,17 +5,9 @@ import contact from "./contact.json";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
-import Lottie from "react-lottie";
+import Lottie from "lottie-react";
 
 const Contact = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: contact,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -135,7 +127,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:w-[250px] h-[250px]'
       >
-        <Lottie options={defaultOptions} style={{ width: '100%', height: "100%" }} />
+        <Lottie animationData={contact} loop={true} />
       </motion.div>
     </div>
   );
