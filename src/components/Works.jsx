@@ -24,7 +24,7 @@ const ProjectCard = ({
       data-aos-duration="1000"
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
-        className="bg-[#30285e] p-5 rounded-2xl w-[300px] md:w-[460px] mx-auto relative"
+        className="bg-[#30285e] p-5 rounded-2xl w-[370px] md:w-[400px] 2xl:w-[460px] mx-auto relative"
       >
         <div className="h-[550px] text-center">
           <h4 className="text-3xl font-semibold">{name}</h4>
@@ -39,7 +39,7 @@ const ProjectCard = ({
             </div>
           </div>
           <div
-            className={`box w-[220px] lg:w-full h-[200px] rounded-lg box${
+            className={`box w-full h-[200px] rounded-lg box${
               index + 1
             }`}
           ></div>
@@ -81,7 +81,7 @@ const ProjectCard = ({
                   ></path>
                 </svg>
               </span>
-              <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+              <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white font-normal">
                 Client Site
               </span>
             </Link>
@@ -105,7 +105,7 @@ const ProjectCard = ({
                   ></path>
                 </svg>
               </span>
-              <span class="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease">
+              <span class="absolute flex items-center justify-center w-full h-full text-white transition-all duration-300 transform group-hover:translate-x-full ease font-normal">
                 live Site
               </span>
               <span class="relative invisible">live Site</span>
@@ -148,7 +148,7 @@ const ProjectCard = ({
                   ></path>
                 </svg>
               </span>
-              <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white">
+              <span class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-white font-normal">
                 Server Site
               </span>
             </Link>
@@ -179,7 +179,7 @@ const Works = () => {
         </div>
       </div>
 
-      <div className="mt-20 flex flex-wrap gap-7">
+      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-2 xl:gap-7">
         {projects.map((project, index) => (
           <ProjectCard key={`project-${index}`} index={index} {...project} />
         ))}
