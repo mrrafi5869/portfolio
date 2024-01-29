@@ -71,7 +71,7 @@ const Contact = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        className="flex-[0.75] bg-black-100 p-8 rounded-2xl mt-24 lg:mt-0  mb-32 lg:mb-0"
+        className="flex-[0.75] bg-[#151030] p-8 rounded-2xl mt-24 lg:mt-0  mb-32 lg:mb-0"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
