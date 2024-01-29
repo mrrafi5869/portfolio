@@ -1,11 +1,8 @@
-import React from "react";
 import profile from "../assets/profile.png";
-import { motion } from "framer-motion";
 import { Typewriter } from "react-simple-typewriter";
 import { GrMail } from "react-icons/gr";
 import { FaInstagram, FaLinkedin, FaGithub, FaDownload } from "react-icons/fa";
 import { SectionWrapper } from "../hoc";
-import { fadeIn, textVariant } from "../utils/motion";
 import { Link } from "react-router-dom";
 import useAOSInit from "../hooks/useAOSint";
 
@@ -60,8 +57,7 @@ const About = () => {
                 />
               </span>
             </h3>
-            <motion.p
-              variants={fadeIn("", "", 0.1, 1)}
+            <p
               className="text-justify p-2 text-lg rounded-lg"
             >
               Accepting the challenge of today's fastest developing industry by
@@ -77,8 +73,8 @@ const About = () => {
               Combine this with my ability to thrive in a collaborative
               environment, and I think that makes me a perfect fit for Frontend
               React Developer.
-            </motion.p>
-            <motion.div className="flex items-center gap-7 text-4xl mt-5">
+            </p>
+            <div className="flex items-center gap-7 text-4xl mt-5">
               <Link
                 to="https://www.linkedin.com/in/mohammad--rafi/"
                 className="text-[#48a3ff]"
@@ -112,7 +108,7 @@ const About = () => {
               >
                 Resume <FaDownload></FaDownload>
               </a>
-            </motion.div>
+            </div>
           </div>
           <img
             data-aos="fade-left"

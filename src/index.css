@@ -19,6 +19,7 @@
   display: block;
 }
 
+
 .black-gradient {
   background: #000000; /* fallback for old browsers */
   background: -webkit-linear-gradient(
@@ -113,6 +114,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 /* canvas- styles */
 .canvas-loader {

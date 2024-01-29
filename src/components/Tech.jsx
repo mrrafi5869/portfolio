@@ -1,180 +1,51 @@
-import React from "react";
-import "./Tech.css";
+import { skills } from "../constants";
 import { SectionWrapper } from "../hoc";
-import Lottie from "lottie-react";
-import animationData from "./desktop.json";
 import useAOSInit from "../hooks/useAOSint";
 const Tech = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: animationData,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-  useAOSInit()
+  useAOSInit();
   return (
     <div>
-      <h1 data-aos="fade-right"
-    data-aos-offset="200"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true" className="contact-head text-gray-400 text-center lg:text-left mb-4 uppercase">
+      <h1
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        className="contact-head text-gray-400 text-center lg:text-left mb-4 uppercase"
+      >
         I have expertise
       </h1>
-      <h1 data-aos="fade-right"
-    data-aos-offset="200"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true" className="contact-head text-5xl text-center lg:text-left mb-16 font-semibold">
+      <h1
+        data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+        data-aos-mirror="true"
+        className="contact-head text-5xl text-center lg:text-left mb-16 font-semibold"
+      >
         My Skills
       </h1>
-      <div className="skills grid grid-cols-1 lg:grid-cols-3 gap-y-5">
-        <div data-aos="fade-right"
-    data-aos-offset="200"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true">
-          <p className="contact-head text-3xl text-center mt-5 text-blue-500">
-            Front End
-          </p>
-          <div className="skill">
-            <div className="skill-name">HTML</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="100%"
-                style={{ maxWidth: "100%" }}
-              ></div>
-            </div>
+      <div data-aos="fade-bottom"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true" className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 2xl:grid-cols-6 place-items-center gap-5">
+        {skills.map((skill) => (
+          <div
+            className="bg-[#1D1836] md:w-[190px] lg:w-[210px] xl:w-[235px] h-[127px] flex flex-col justify-center items-center gap-y-3 transition-all duration-300 hover:border-green-700 hover:shadow-md hover:shadow-teal-400 hover:scale-105 cursor-pointer"
+          >
+            <img data-aos="fade-bottom"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true" src={skill.img} className="w-14 h-14" alt="" />
+            <p data-aos="fade-bottom"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            data-aos-mirror="true">{skill.name}</p>
           </div>
-          <div className="skill">
-            <div className="skill-name">CSS</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="100%"
-                style={{ maxWidth: "100%" }}
-              ></div>
-            </div>
-          </div>
-          <div className="skill">
-            <div className="skill-name">Bootstrap</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="90%"
-                style={{ maxWidth: "90%" }}
-              ></div>
-            </div>
-          </div>
-          <div className="skill">
-            <div className="skill-name">Tailwind CSS</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="90%"
-                style={{ maxWidth: "90%" }}
-              ></div>
-            </div>
-          </div>
-          <div className="skill">
-            <div className="skill-name">JavaScript</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="85%"
-                style={{ maxWidth: "85%" }}
-              ></div>
-            </div>
-          </div>
-
-          <div className="skill">
-            <div className="skill-name">React.js</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="90%"
-                style={{ maxWidth: "90%" }}
-              ></div>
-            </div>
-          </div>
-        </div>
-        <div style={{ width: '100%', maxWidth: '500px' }}>
-        <Lottie data-aos="fade-down"
-    data-aos-offset="200"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true" animationData={animationData} loop={true} />
-</div>
-        <div data-aos="fade-left"
-    data-aos-offset="200"
-    data-aos-duration="1000"
-    data-aos-easing="ease-in-out"
-    data-aos-mirror="true">
-          <p className="contact-head text-3xl text-center mt-5">Back End</p>
-          <div className="skill">
-            <div className="skill-name">JavaScript</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="90%"
-                style={{ maxWidth: "90%" }}
-              ></div>
-            </div>
-          </div>
-          <div className="skill">
-            <div className="skill-name">Vercel</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="95%"
-                style={{ maxWidth: "95%" }}
-              ></div>
-            </div>
-          </div>
-          <div className="skill">
-            <div className="skill-name">Node.js</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="70%"
-                style={{ maxWidth: "70%" }}
-              ></div>
-            </div>
-          </div>
-          <div className="skill">
-            <div className="skill-name">Express.js</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="70%"
-                style={{ maxWidth: "70%" }}
-              ></div>
-            </div>
-          </div>
-          <div className="skill">
-            <div className="skill-name">MongoDB</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="70%"
-                style={{ maxWidth: "70%" }}
-              ></div>
-            </div>
-          </div>
-          <div className="skill">
-            <div className="skill-name">JWT</div>
-            <div className="skill-bar">
-              <div
-                className="skill-per"
-                per="75%"
-                style={{ maxWidth: "75%" }}
-              ></div>
-            </div>
-          </div>
-        </div>
+        ))}
       </div>
     </div>
   );
