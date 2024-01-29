@@ -4,40 +4,44 @@
 }
 
 .box.box1{
-    background: url("https://i.ibb.co/m8BR97Y/gamespace777-netlify-app.png");
+    background: url("https://i.ibb.co/WfDZ9pL/let-s-scheduled-frontend-vercel-app.png");
     background-size: cover;
 }
 .box.box2{
-    background: url("https://i.ibb.co/L1mCbpc/used-products-res-web-app.png");
+    background: url("https://i.ibb.co/m8BR97Y/gamespace777-netlify-app.png");
     background-size: cover;
 }
 .box.box3{
-    background: url("https://i.ibb.co/GMYNx8z/service-review-9c7fb-web-app.png");
+    background: url("https://i.ibb.co/L1mCbpc/used-products-res-web-app.png");
     background-size: cover;
 }
 .box.box4{
-    background: url("https://i.ibb.co/Jdt3yFt/screencapture-doctors-portal-b43f3-web-app-2023-10-22-15-29-58.png");
+    background: url("https://i.ibb.co/GMYNx8z/service-review-9c7fb-web-app.png");
     background-size: cover;
 }
 
 .box.box5{
-    background: url("https://i.ibb.co/PDjkSSd/screencapture-learning-platform-websit-a1b26-web-app-course-2023-10-22-15-29-31.png");
+    background: url("https://i.ibb.co/Jdt3yFt/screencapture-doctors-portal-b43f3-web-app-2023-10-22-15-29-58.png");
     background-size: cover;
 }
 
 .box.box6{
-    background: url("https://i.ibb.co/5hJ7CX5/symphonious-panda-15ad04-netlify-app-topics.png");
+    background: url("https://i.ibb.co/PDjkSSd/screencapture-learning-platform-websit-a1b26-web-app-course-2023-10-22-15-29-31.png");
     background-size: cover;
 }
 .box.box7{
-    background: url("https://i.ibb.co/RTTR7Xk/screencapture-endearing-biscochitos-9ad4a0-netlify-app-2023-10-22-15-31-46.png");
+    background: url("https://i.ibb.co/5hJ7CX5/symphonious-panda-15ad04-netlify-app-topics.png");
     background-size: cover;
 }
 .box.box8{
-    background: url("https://i.ibb.co/0jCYd4y/screencapture-thunderous-souffle-54cc05-netlify-app-2023-10-22-15-32-28.png");
+    background: url("https://i.ibb.co/RTTR7Xk/screencapture-endearing-biscochitos-9ad4a0-netlify-app-2023-10-22-15-31-46.png");
     background-size: cover;
 }
 .box.box9{
+    background: url("https://i.ibb.co/0jCYd4y/screencapture-thunderous-souffle-54cc05-netlify-app-2023-10-22-15-32-28.png");
+    background-size: cover;
+}
+.box.box10{
     background: url("https://i.ibb.co/tmJKr0S/wonderful-puppy-713a42-netlify-app.png");
     background-size: cover;
 }

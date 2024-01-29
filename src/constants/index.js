@@ -187,14 +187,14 @@ export const tools = [
 const projects = [
   {
     "id": 1,
-    "name": "GameSpace",
+    "name": "Let's Schedule",
     "stack": "Full Stack",
-      "type": "Play And Sell Games",
-      "technologies": ["HTML", "CSS", "Tailwind", "React", "NodeJS", "ExpressJS", "MongoDB", "Socket IO"],
-      "desc": "This is a Team Project.This website is designed to play and sell games.Anyone can play games on the website. From here user can download games. User can get live support through live chat. And lastly users can play 2D games.On the home page you can see all these users and some games to download.",
-      "liveLink": "https://gamespace777.netlify.app/login",
-      "clientLink": "https://github.com/alamineimon/gamespace-client",
-      "serverLink": "https://github.com/alamineimon/gamespace-server"
+      "type": "Create Event",
+      "technologies": ["Tailwind", "React", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "TypeScript"],
+      "desc": "A collaborative project developed in three weeks, EventScheduler is a user-friendly web app for seamless event scheduling. Users can create conflict-free events. To avoid scheduling conflicts, the system ensures that a specific date and time slot is available for booking only once. Receive automated email invitations, and explore three premium versions tailored for advanced office meeting functionalities.",
+      "liveLink": "https://github.com/Suhanur-Rohoman-Sumon-github/let-s-scheduled-frontend",
+      "clientLink": "https://let-s-scheduled-frontend.vercel.app/",
+      "serverLink": "https://github.com/Suhanur-Rohoman-Sumon-github/lets-schedule-backend"
   },
   {
     "id": 2,
@@ -245,7 +245,7 @@ const projects = [
   },
 
   {
-    "id": 5,
+    "id": 6,
     "name": "Programming Hero",
     "stack": "Full Stack",
       "type": "Learn WebDevelopment",
@@ -259,7 +259,7 @@ const projects = [
   
 
   {
-    "id": 6,
+    "id": 7,
     "name": "Quiz Crackers",
     "stack": "Front-End",
       "type": "Quiz Exam",
@@ -270,7 +270,7 @@ const projects = [
   },
 
   {
-    "id": 7,
+    "id": 8,
     "name": "News 24",
     "stack": "Front-End",
       "type": "News Paper",
@@ -281,7 +281,7 @@ const projects = [
   },
 
   {
-    "id": 8,
+    "id": 9,
     "name": "Fit Zone",
     "stack": "Front-End",
       "type": "Gym Center",
@@ -292,7 +292,7 @@ const projects = [
   },
 
   {
-    "id": 9,
+    "id": 10,
     "name": "Sports Club",
     "stack": "Front-End",
       "type": "Sports investment",
