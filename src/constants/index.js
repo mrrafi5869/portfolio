@@ -196,9 +196,20 @@ const projects = [
       "clientLink": "https://github.com/alamineimon/gamespace-client",
       "serverLink": "https://github.com/alamineimon/gamespace-server"
   },
-  
   {
     "id": 2,
+    "name": "GameSpace",
+    "stack": "Full Stack",
+      "type": "Play And Sell Games",
+      "technologies": ["HTML", "CSS", "Tailwind", "React", "NodeJS", "ExpressJS", "MongoDB", "Socket IO"],
+      "desc": "This is a Team Project.This website is designed to play and sell games.Anyone can play games on the website. From here user can download games. User can get live support through live chat. And lastly users can play 2D games.On the home page you can see all these users and some games to download.",
+      "liveLink": "https://gamespace777.netlify.app/login",
+      "clientLink": "https://github.com/alamineimon/gamespace-client",
+      "serverLink": "https://github.com/alamineimon/gamespace-server"
+  },
+  
+  {
+    "id": 3,
     "name": "Luxury Vehicles",
     "stack": "Full Stack",
       "type": "Used Products Resale",
@@ -210,7 +221,7 @@ const projects = [
   },
 
   {
-    "id": 3,
+    "id": 4,
     "name": "Dream Weaver",
     "stack": "Full Stack",
       "type": "Service Review",
@@ -222,7 +233,7 @@ const projects = [
   },
 
   {
-    "id": 4,
+    "id": 5,
     "name": "Nursing Home",
     "stack": "Full Stack",
       "type": "Doctors Portal",

@@ -5,6 +5,7 @@ import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { Link } from "react-router-dom";
 import useAOSInit from "../hooks/useAOSint";
+import { FaGithub, FaLink  } from "react-icons/fa";
 
 const ProjectCard = ({
   index,
@@ -19,7 +20,7 @@ const ProjectCard = ({
 
   return (
     <div
-    id="projects"
+      id="projects"
       data-aos="fade-down"
       data-aos-offset="200"
       data-aos-duration="1000"
@@ -43,7 +44,39 @@ const ProjectCard = ({
           className={`box w-full h-[200px] rounded-lg box${index + 1}`}
         ></div>
         <div className="flex justify-center items-center gap-4 mt-14">
-          <Link
+          <Link to={clientLink}
+            className="w-[110px] px-2 py-2 rounded-md uppercase hover:scale-110 transition-all duration-200 flex justify-center items-center gap-x-2"
+            style={{
+              background:
+                "linear-gradient(to right, #2B97EB, rgb(96, 104, 240))", // sky to purple gradient
+            }}
+          >
+            <FaGithub></FaGithub>
+            Client
+          </Link>
+          <Link to={liveLink}
+            className="w-[110px] px-2 py-2 rounded-md uppercase hover:scale-110 transition-all duration-200 flex justify-center items-center gap-x-2"
+            style={{
+              background:
+                "linear-gradient(to right, #F6779B, #E15BE7)", // sky to purple gradient
+            }}
+          >
+            <FaLink></FaLink>
+            Live
+          </Link>
+          {
+            serverLink && <Link to={serverLink}
+            className="w-[110px] px-2 py-2 rounded-md uppercase hover:scale-110 transition-all duration-200 flex justify-center items-center gap-x-2"
+            style={{
+              background:
+                "linear-gradient(to right, #2B97EB, rgb(96, 104, 240))", // sky to purple gradient
+            }}
+          >
+            <FaGithub></FaGithub>
+            Server
+          </Link>
+          }
+          {/* <Link
             to={clientLink}
             class="relative inline-flex items-center justify-start py-2 pl-1 pr-8 overflow-hidden font-semibold text-indigo-600 transition-all duration-150 ease-in-out rounded hover:pl-7 hover:pr-2 bg-gray-50 group"
           >
@@ -151,7 +184,7 @@ const ProjectCard = ({
                 Server Site
               </span>
             </Link>
-          )}
+          )} */}
         </div>
       </div>
     </div>

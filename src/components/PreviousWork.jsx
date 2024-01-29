@@ -2,14 +2,25 @@
 import React from "react";
 import "./PreviousWork.css";
 import { SectionWrapper } from "../hoc";
+import useAOSInit from "../hooks/useAOSint";
 
 const PreviousWork = () => {
+  useAOSInit();
   return (
     <div>
-      <h3 className="contact-head text-gray-400 text-center lg:text-left mb-4 uppercase">
+      <h3
+          data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true" className="contact-head text-gray-400 text-center lg:text-left mb-4 uppercase">
         EXPERIENCE
       </h3>
-      <h3 className="contact-head text-5xl text-center lg:text-left mb-16 font-semibold">
+      <h3 data-aos="fade-right"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          data-aos-mirror="true" className="contact-head text-5xl text-center lg:text-left mb-16 font-semibold">
         Previously I Worked
       </h3>
       <div class="container">
@@ -17,6 +28,11 @@ const PreviousWork = () => {
           <section class="col">
             <div class="contentsTwo">
               <div
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
                 class="box"
                 style={{
                   background:
@@ -54,6 +70,11 @@ const PreviousWork = () => {
               </div>
 
               <div
+              data-aos="fade-right"
+              data-aos-offset="200"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              data-aos-mirror="true"
                 class="box"
                 style={{
                   background:
