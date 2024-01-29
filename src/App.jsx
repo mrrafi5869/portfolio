@@ -3,6 +3,7 @@ import { ToastContainer, toast } from "react-toastify";
 
 import { About, Contact, Experience, Hero, Navbar, Tech, Works } from "./components";
 import Blog from "./components/Blog";
+import PreviousWork from "./components/PreviousWork";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
         </div>
         <About />
         <Tech />
+        <PreviousWork></PreviousWork>
         <Experience />
         <Works />
         <Blog></Blog>

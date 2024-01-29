@@ -19,6 +19,7 @@ const ProjectCard = ({
 
   return (
     <div
+    id="projects"
       data-aos="fade-down"
       data-aos-offset="200"
       data-aos-duration="1000"

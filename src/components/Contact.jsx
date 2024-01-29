@@ -4,17 +4,17 @@ import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import useAOSInit from "../hooks/useAOSint";
 import { toast } from "react-toastify";
+import Lottie from "lottie-react";
+import animationData from '../assets/Animation - 1706532812699.json';
 import "react-toastify/dist/ReactToastify.css";
 const Contact = () => {
   const formRef = useRef();
+  const [loading, setLoading] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
     message: "",
   });
-
-  const [loading, setLoading] = useState(false);
-
   const handleChange = (e) => {
     const { target } = e;
     const { name, value } = target;
@@ -69,9 +69,11 @@ const Contact = () => {
         }
       );
   };
+
   useAOSInit();
   return (
     <div
+    id="contact"
       className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
     >
       <div
@@ -145,17 +147,8 @@ const Contact = () => {
         className="xl:flex-1 xl:h-auto md:w-[250px] h-[250px]"
       >
         <div className="flex justify-center items-center lg:h-screen">
-          <div className="relative">
-            {/* Image */}
-            <img
-              src="https://img.freepik.com/free-vector/flat-design-illustration-customer-support_23-2148887720.jpg?w=740&t=st=1706505080~exp=1706505680~hmac=eda5287396298b003dacc034fa03f1e3a8a4ae56ce08213542fdf1533c8086a1"
-              className="lg:w-[500px] lg:h-[500px] rounded-full"
-              alt=""
-            />
+        <Lottie animationData={animationData} loop={true} />
 
-            {/* Overlay */}
-            <div className="absolute inset-0 bg-black opacity-50 rounded-full"></div>
-          </div>
         </div>
       </div>
     </div>

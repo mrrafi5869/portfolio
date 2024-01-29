@@ -48,7 +48,7 @@ const ExperienceCard = ({ experience }) => {
 
 const Experience = () => {
   return (
-    <>
+    <div id="work">
       <div data-aos="fade-down"
     data-aos-offset="200"
     data-aos-duration="1000"
@@ -72,7 +72,7 @@ const Experience = () => {
           ))}
         </VerticalTimeline>
       </div>
-    </>
+    </div>
   );
 };
 

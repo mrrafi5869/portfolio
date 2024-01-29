@@ -40,7 +40,7 @@ const About = () => {
             </h1>
             <h3 className="text-3xl my-3">
               A{" "}
-              <span className="text-[#925EFF] font-bold">
+              <span className="text-[#6068F0] font-bold">
                 <Typewriter
                   words={[
                     "Front End Developer",
@@ -63,7 +63,7 @@ const About = () => {
               Accepting the challenge of today's fastest developing industry by
               utilizing all the knowledge, skill, and experience. I'm an expert
               with{" "}
-              <span className="technology text-[#925EFF] font-semibold">
+              <span className="technology text-[#2B97EB] font-semibold">
                 React Js, JavaScript, MongoDB, Node Js, Express JS, REST API,
                 HTML5, CSS, Tailwind CSS, Bootstrap, Git, Github, React
                 Bootstrap, React Query, npm, Firebase, Daisy UI, Stripe Payment
@@ -104,7 +104,10 @@ const About = () => {
               <a
                 href="Mohammad-Rafi_MERN-Stack Developer.pdf"
                 download="Mohammad-Rafi_MERN-Stack Developer.pdf"
-                className="flex items-center gap-2 text-lg border border-[#925EFF] px-[10px] py-[6px] rounded-full cursor-pointer text-white hover:bg-[#925eff] transition-all duration-200"
+                className="flex items-center gap-2 text-lg px-[10px] py-[6px] rounded-full cursor-pointer text-white transition-all duration-200 hover:scale-105"
+                style={{
+                  background: "linear-gradient(to right, #2B97EB, #6068F0)",
+                }}
               >
                 Resume <FaDownload></FaDownload>
               </a>
