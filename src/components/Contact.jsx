@@ -1,9 +1,7 @@
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-import contact from "./contact.json";
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import Lottie from "lottie-react";
 import useAOSInit from "../hooks/useAOSint";
 
 const Contact = () => {
