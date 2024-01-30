@@ -144,12 +144,11 @@ const Contact = () => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
         data-aos-mirror="true"
-        className="xl:flex-1 xl:h-auto md:w-[250px] h-[250px]"
+        className="xl:flex-1 flex justify-center items-center w-[700px] h-[700px] mx-auto"
       >
-        <div className="flex justify-center items-center lg:h-screen">
-        <Lottie animationData={animationData} loop={true} />
+        <Lottie animationData={animationData} className="" loop={true} />
 
-        </div>
+        
       </div>
     </div>
   );
