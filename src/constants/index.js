@@ -185,19 +185,9 @@ export const tools = [
 
 
 const projects = [
+
   {
     "id": 1,
-    "name": "Let's Schedule",
-    "stack": "Full Stack",
-      "type": "Create Event",
-      "technologies": ["Tailwind", "React", "NodeJS", "ExpressJS", "MongoDB", "Mongoose", "TypeScript"],
-      "desc": "A collaborative project developed in three weeks, EventScheduler is a user-friendly web app for seamless event scheduling. Users can create conflict-free events. To avoid scheduling conflicts, the system ensures that a specific date and time slot is available for booking only once. Receive automated email invitations, and explore three premium versions tailored for advanced office meeting functionalities.",
-      "liveLink": "https://let-s-scheduled-frontend.vercel.app/",
-      "clientLink": "https://github.com/Suhanur-Rohoman-Sumon-github/let-s-scheduled-frontend",
-      "serverLink": "https://github.com/Suhanur-Rohoman-Sumon-github/lets-schedule-backend"
-  },
-  {
-    "id": 2,
     "name": "GameSpace",
     "stack": "Full Stack",
       "type": "Play And Sell Games",
@@ -208,6 +198,17 @@ const projects = [
       "serverLink": "https://github.com/alamineimon/gamespace-server"
   },
   
+  {
+    "id": 2,
+    "name": "MeetPlanr",
+    "stack": "Full Stack",
+      "type": "Create Event",
+      "technologies": ["Next JS", "NodeJS", "ExpressJS", "MongoDB", "Tailwlind CSS", "Stripe", " Node Mailer"],
+      "desc": "A collaborative project developed in three weeks, EventScheduler is a user-friendly web app for seamless event scheduling. Users can create conflict-free events. To avoid scheduling conflicts, the system ensures that a specific date and time slot is available for booking only once. Receive automated email invitations, and explore three premium versions tailored for advanced office meeting functionalities.",
+      "liveLink": "https://meetplanr.vercel.app/",
+      "clientLink": "https://github.com/protapkrghosh/MeetPlanr",
+      "serverLink": "https://github.com/protapkrghosh/MeetPlanr"
+  },
   {
     "id": 3,
     "name": "Luxury Vehicles",
